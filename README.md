@@ -60,8 +60,8 @@ Here is a demo:
         treeAdapter.setData(treeNodes);
         treeAdapter.bindRecyclerView(recyclerView);
 
-FirstTreeNode, SecondTreeNode and ThirdTreeNode are all subclass of TreeNode. 
-You should notice that the only data class treeAdapter accepting is List<TreeNode>. 
+FirstTreeNode, SecondTreeNode and ThirdTreeNode are all subclasses of TreeNode. 
+You should notice that the only data class treeAdapter accepting is TreeNode. 
 
 **Anything more?**
 
