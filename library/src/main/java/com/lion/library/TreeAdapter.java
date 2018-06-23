@@ -1,6 +1,7 @@
 package com.lion.library;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseIntArray;
@@ -22,18 +23,19 @@ public abstract class TreeAdapter extends RecyclerView.Adapter<TreeViewHolder> {
         this.treeNodes = new ArrayList<>();
     }
 
+    @NonNull
     @Override
-    public TreeViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public TreeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new TreeViewHolder(LayoutInflater.from(context).inflate(layoutResourceMap.get(viewType), parent, false));
     }
 
     @Override
-    public void onBindViewHolder(TreeViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull TreeViewHolder holder, int position) {
         bindViewHolder(holder, position, null);
     }
 
     @Override
-    public void onBindViewHolder(TreeViewHolder holder, int position, List<Object> payloads) {
+    public void onBindViewHolder(@NonNull TreeViewHolder holder, int position, @NonNull List<Object> payloads) {
         bindViewHolder(holder, position, payloads);
     }
 
