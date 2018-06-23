@@ -64,5 +64,6 @@ FirstTreeNode, SecondTreeNode and ThirdTreeNode are all subclass of TreeNode.
 You should notice that the only data class treeAdapter accepting is List<TreeNode>. 
 
 **Anything more?**
+
 If you wanna customize treeNode, which probably you have to, please note that the field names 'viewType' and 'visible'
 are not supposed to be used since they have been used by TreeNode.
