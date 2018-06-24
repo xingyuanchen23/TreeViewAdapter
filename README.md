@@ -67,3 +67,7 @@ You should notice that the only data class treeAdapter accepting is TreeNode.
 
 If you wanna customize treeNode, which probably you have to, please note that the field names 'viewType' and 'visible'
 are not supposed to be used since they have been used by TreeNode.
+
+**Enjoy yourself!**
+
+    implementation 'com.github.LionXingyuanChen:TreeView:v1.0.0'
